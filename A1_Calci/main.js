@@ -3,7 +3,7 @@ const sub = require("./subtract");
 const multi = require("./multiply");
 const devide = require("./devide");
 
-var A = 7;
+var A = 9;
 var B = 3;
 
 // console.log(add(A, B));
