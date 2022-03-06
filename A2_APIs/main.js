@@ -17,7 +17,7 @@ app.listen(2000, () => {
     console.log("Listing on port 2000");
 });
 
-app.get("/users", function (req, res) {
+app.get("/", function (req, res) {
     res.send("Hello");
 });
 
