@@ -18,7 +18,7 @@ app.listen(2000, () => {
 });
 
 app.get("/", function (req, res) {
-    res.send("Hello");
+    res.send("Hello APIs");
 });
 
 app.get("/books", function (req, res) {
