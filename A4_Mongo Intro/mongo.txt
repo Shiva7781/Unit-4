@@ -1,0 +1,550 @@
+C:\Users\Admin>mongo
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("9d0e4da2-4133-4272-8d50-1f13119bc0db") }
+MongoDB server version: 5.0.6
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2022-03-11T14:37:27.641+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> use assignment
+switched to db assignment
+> db
+assignment
+> show collections
+users
+> db.users.remove({})
+WriteResult({ "nRemoved" : 18 })
+> db.users.find()
+> db.users.insert([{first_name:"Shiva", last_name:"Vishwakarma", email:"Shiva@gmail.com", gender:"Male", ip_address:"4525",age:25}])
+BulkWriteResult({
+        "writeErrors" : [ ],
+        "writeConcernErrors" : [ ],
+        "nInserted" : 1,
+        "nUpserted" : 0,
+        "nMatched" : 0,
+        "nModified" : 0,
+        "nRemoved" : 0,
+        "upserted" : [ ]
+})
+> db.users.find().pretty()
+{
+        "_id" : ObjectId("622b7369af78b856dac995ae"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+> db.users.insert([{first_name:"Shiva", last_name:"Vishwakarma", email:"Shiva@gmail.com", gender:"Male", ip_address:"4525",age:25}])
+BulkWriteResult({
+        "writeErrors" : [ ],
+        "writeConcernErrors" : [ ],
+        "nInserted" : 1,
+        "nUpserted" : 0,
+        "nMatched" : 0,
+        "nModified" : 0,
+        "nRemoved" : 0,
+        "upserted" : [ ]
+})
+> db.users.insert([{first_name:"Shiva", last_name:"Vishwakarma", email:"Shiva@gmail.com", gender:"Male", ip_address:"4525",age:25}])
+BulkWriteResult({
+        "writeErrors" : [ ],
+        "writeConcernErrors" : [ ],
+        "nInserted" : 1,
+        "nUpserted" : 0,
+        "nMatched" : 0,
+        "nModified" : 0,
+        "nRemoved" : 0,
+        "upserted" : [ ]
+})
+> db.users.insert([{first_name:"Shiva", last_name:"Vishwakarma", email:"Shiva@gmail.com", gender:"Male", ip_address:"4525",age:25}])
+BulkWriteResult({
+        "writeErrors" : [ ],
+        "writeConcernErrors" : [ ],
+        "nInserted" : 1,
+        "nUpserted" : 0,
+        "nMatched" : 0,
+        "nModified" : 0,
+        "nRemoved" : 0,
+        "upserted" : [ ]
+})
+> db.users.insert([{first_name:"Shiva", last_name:"Vishwakarma", email:"Shiva@gmail.com", gender:"Male", ip_address:"4525",age:25}])
+BulkWriteResult({
+        "writeErrors" : [ ],
+        "writeConcernErrors" : [ ],
+        "nInserted" : 1,
+        "nUpserted" : 0,
+        "nMatched" : 0,
+        "nModified" : 0,
+        "nRemoved" : 0,
+        "upserted" : [ ]
+})
+> db.users.insert([{first_name:"Shiva", last_name:"Vishwakarma", email:"Shiva@gmail.com", gender:"Male", ip_address:"4525",age:25}])
+BulkWriteResult({
+        "writeErrors" : [ ],
+        "writeConcernErrors" : [ ],
+        "nInserted" : 1,
+        "nUpserted" : 0,
+        "nMatched" : 0,
+        "nModified" : 0,
+        "nRemoved" : 0,
+        "upserted" : [ ]
+})
+> db.users.insert([{first_name:"Shiva", last_name:"Vishwakarma", email:"Shiva@gmail.com", gender:"Male", ip_address:"4525",age:25}])
+BulkWriteResult({
+        "writeErrors" : [ ],
+        "writeConcernErrors" : [ ],
+        "nInserted" : 1,
+        "nUpserted" : 0,
+        "nMatched" : 0,
+        "nModified" : 0,
+        "nRemoved" : 0,
+        "upserted" : [ ]
+})
+> db.users.insert([{first_name:"Shiva", last_name:"Vishwakarma", email:"Shiva@gmail.com", gender:"Male", ip_address:"4525",age:25}])
+BulkWriteResult({
+        "writeErrors" : [ ],
+        "writeConcernErrors" : [ ],
+        "nInserted" : 1,
+        "nUpserted" : 0,
+        "nMatched" : 0,
+        "nModified" : 0,
+        "nRemoved" : 0,
+        "upserted" : [ ]
+})
+> db.users.insert([{first_name:"Priya", last_name:"Rajput", email:"Priya@gmail.com", gender:"Female", ip_address:"8525",age:22}])
+BulkWriteResult({
+        "writeErrors" : [ ],
+        "writeConcernErrors" : [ ],
+        "nInserted" : 1,
+        "nUpserted" : 0,
+        "nMatched" : 0,
+        "nModified" : 0,
+        "nRemoved" : 0,
+        "upserted" : [ ]
+})
+> db.users.insert([{first_name:"Priya", last_name:"Rajput", email:"Priya@gmail.com", gender:"Female", ip_address:"8525",age:22}])
+BulkWriteResult({
+        "writeErrors" : [ ],
+        "writeConcernErrors" : [ ],
+        "nInserted" : 1,
+        "nUpserted" : 0,
+        "nMatched" : 0,
+        "nModified" : 0,
+        "nRemoved" : 0,
+        "upserted" : [ ]
+})
+> db.users.find().pretty()
+{
+        "_id" : ObjectId("622b7369af78b856dac995ae"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b740faf78b856dac995af"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7412af78b856dac995b0"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7413af78b856dac995b1"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7415af78b856dac995b2"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7416af78b856dac995b3"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7417af78b856dac995b4"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7418af78b856dac995b5"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b74a3af78b856dac995b6"),
+        "first_name" : "Priya",
+        "last_name" : "Rajput",
+        "email" : "Priya@gmail.com",
+        "gender" : "Female",
+        "ip_address" : "8525",
+        "age" : 22
+}
+{
+        "_id" : ObjectId("622b74a6af78b856dac995b7"),
+        "first_name" : "Priya",
+        "last_name" : "Rajput",
+        "email" : "Priya@gmail.com",
+        "gender" : "Female",
+        "ip_address" : "8525",
+        "age" : 22
+}
+
+// Optional Part
+
+C:\Users\Admin>mongo
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("61b4a03f-4d93-439f-8721-3d720d73f111") }
+MongoDB server version: 5.0.6
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2022-03-11T14:37:27.641+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> use assignment
+switched to db assignment
+> db
+assignment
+> show collections
+users
+> db.users.find().pretty()
+{
+        "_id" : ObjectId("622b7369af78b856dac995ae"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b740faf78b856dac995af"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7412af78b856dac995b0"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7413af78b856dac995b1"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7415af78b856dac995b2"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7416af78b856dac995b3"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7417af78b856dac995b4"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7418af78b856dac995b5"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b74a3af78b856dac995b6"),
+        "first_name" : "Priya",
+        "last_name" : "Rajput",
+        "email" : "Priya@gmail.com",
+        "gender" : "Female",
+        "ip_address" : "8525",
+        "age" : 22
+}
+{
+        "_id" : ObjectId("622b74a6af78b856dac995b7"),
+        "first_name" : "Priya",
+        "last_name" : "Rajput",
+        "email" : "Priya@gmail.com",
+        "gender" : "Female",
+        "ip_address" : "8525",
+        "age" : 22
+}
+>
+> db.users.update({first_name:"Priya"}, {$set:{LOcation:"Nsk"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.users.updateMany({first_name:"Priya"}, {$set:{LOcation:"Nsk"}})
+{ "acknowledged" : true, "matchedCount" : 2, "modifiedCount" : 1 }
+> db.users.find().pretty()
+{
+        "_id" : ObjectId("622b7369af78b856dac995ae"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b740faf78b856dac995af"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7412af78b856dac995b0"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7413af78b856dac995b1"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7415af78b856dac995b2"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7416af78b856dac995b3"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7417af78b856dac995b4"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7418af78b856dac995b5"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b74a3af78b856dac995b6"),
+        "first_name" : "Priya",
+        "last_name" : "Rajput",
+        "email" : "Priya@gmail.com",
+        "gender" : "Female",
+        "ip_address" : "8525",
+        "age" : 22,
+        "LOcation" : "Nsk"
+}
+{
+        "_id" : ObjectId("622b74a6af78b856dac995b7"),
+        "first_name" : "Priya",
+        "last_name" : "Rajput",
+        "email" : "Priya@gmail.com",
+        "gender" : "Female",
+        "ip_address" : "8525",
+        "age" : 22,
+        "LOcation" : "Nsk"
+}
+> db.users.remove({name:"Priya"})
+WriteResult({ "nRemoved" : 0 })
+> db.users.remove({first_name:"Priya"})
+WriteResult({ "nRemoved" : 2 })
+> db.users.find().pretty()
+{
+        "_id" : ObjectId("622b7369af78b856dac995ae"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b740faf78b856dac995af"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7412af78b856dac995b0"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7413af78b856dac995b1"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7415af78b856dac995b2"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7416af78b856dac995b3"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7417af78b856dac995b4"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("622b7418af78b856dac995b5"),
+        "first_name" : "Shiva",
+        "last_name" : "Vishwakarma",
+        "email" : "Shiva@gmail.com",
+        "gender" : "Male",
+        "ip_address" : "4525",
+        "age" : 25
+}
+>
