@@ -1,0 +1,2421 @@
+Microsoft Windows [Version 10.0.19044.1586]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Admin>mongo
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("fa7a2e29-747c-4033-909a-4400cf572c77") }
+MongoDB server version: 5.0.6
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2022-03-13T17:04:00.188+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> use movies
+switched to db movies
+> show collections
+movies
+> db.movies.find().pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fd"),
+        "movie_name" : "Slave of Love, A (Raba lyubvi)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2005,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fe"),
+        "movie_name" : "Long John Silver",
+        "movie_genre" : "Action|Adventure",
+        "production_year" : 2019,
+        "budget" : 18210
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53ff"),
+        "movie_name" : "Désiré",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 14512
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5400"),
+        "movie_name" : "Excision",
+        "movie_genre" : "Crime|Drama|Horror|Thriller",
+        "production_year" : 2000,
+        "budget" : 15782
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5401"),
+        "movie_name" : "Deadline",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5402"),
+        "movie_name" : "Walk to Remember, A",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2002,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5403"),
+        "movie_name" : "Alan Partridge: Alpha Papa",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 15000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5404"),
+        "movie_name" : "Red Chapel (Røde kapel)",
+        "movie_genre" : "Comedy|Documentary",
+        "production_year" : 1996,
+        "budget" : 11540
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5405"),
+        "movie_name" : "Sweet Hereafter, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "budget" : 15581
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5406"),
+        "movie_name" : "Turn It Up",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2005,
+        "budget" : 18500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5407"),
+        "movie_name" : "Razortooth",
+        "movie_genre" : "Action|Horror|Sci-Fi|Thriller",
+        "production_year" : 2008,
+        "budget" : 14550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5408"),
+        "movie_name" : "Staying Together",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2015,
+        "budget" : 18550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5409"),
+        "movie_name" : "Constant Nymph, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2007,
+        "budget" : 18000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540a"),
+        "movie_name" : "Conspirator, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2018,
+        "budget" : 19500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540b"),
+        "movie_name" : "This Is England",
+        "movie_genre" : "Drama",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540c"),
+        "movie_name" : "This Land Is Mine",
+        "movie_genre" : "Drama|War",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540d"),
+        "movie_name" : "Marvel One-Shot: Item 47",
+        "movie_genre" : "Action|Fantasy|Sci-Fi",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540e"),
+        "movie_name" : "When a Man Loves a Woman",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540f"),
+        "movie_name" : "Hatchet II",
+        "movie_genre" : "Comedy|Horror|Thriller",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5410"),
+        "movie_name" : "Hide-Out",
+        "movie_genre" : "Comedy|Crime|Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+Type "it" for more
+> db.find({movie_name:{$eq:"Deadline"}}).pretty()
+uncaught exception: TypeError: db.find is not a function :
+@(shell):1:1
+> db.movies.find({movie_name:{$eq:"Deadline"}}).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5401"),
+        "movie_name" : "Deadline",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 17114
+}
+> db.movies.find({movie_name:{$ne:"Deadline"}}).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fd"),
+        "movie_name" : "Slave of Love, A (Raba lyubvi)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2005,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fe"),
+        "movie_name" : "Long John Silver",
+        "movie_genre" : "Action|Adventure",
+        "production_year" : 2019,
+        "budget" : 18210
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53ff"),
+        "movie_name" : "Désiré",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 14512
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5400"),
+        "movie_name" : "Excision",
+        "movie_genre" : "Crime|Drama|Horror|Thriller",
+        "production_year" : 2000,
+        "budget" : 15782
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5402"),
+        "movie_name" : "Walk to Remember, A",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2002,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5403"),
+        "movie_name" : "Alan Partridge: Alpha Papa",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 15000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5404"),
+        "movie_name" : "Red Chapel (Røde kapel)",
+        "movie_genre" : "Comedy|Documentary",
+        "production_year" : 1996,
+        "budget" : 11540
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5405"),
+        "movie_name" : "Sweet Hereafter, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "budget" : 15581
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5406"),
+        "movie_name" : "Turn It Up",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2005,
+        "budget" : 18500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5407"),
+        "movie_name" : "Razortooth",
+        "movie_genre" : "Action|Horror|Sci-Fi|Thriller",
+        "production_year" : 2008,
+        "budget" : 14550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5408"),
+        "movie_name" : "Staying Together",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2015,
+        "budget" : 18550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5409"),
+        "movie_name" : "Constant Nymph, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2007,
+        "budget" : 18000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540a"),
+        "movie_name" : "Conspirator, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2018,
+        "budget" : 19500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540b"),
+        "movie_name" : "This Is England",
+        "movie_genre" : "Drama",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540c"),
+        "movie_name" : "This Land Is Mine",
+        "movie_genre" : "Drama|War",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540d"),
+        "movie_name" : "Marvel One-Shot: Item 47",
+        "movie_genre" : "Action|Fantasy|Sci-Fi",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540e"),
+        "movie_name" : "When a Man Loves a Woman",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540f"),
+        "movie_name" : "Hatchet II",
+        "movie_genre" : "Comedy|Horror|Thriller",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5410"),
+        "movie_name" : "Hide-Out",
+        "movie_genre" : "Comedy|Crime|Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5411"),
+        "movie_name" : "Quiz Show",
+        "movie_genre" : "Drama",
+        "production_year" : null,
+        "budget" : null
+}
+Type "it" for more
+> db.movies.find({budget:{$gte:15000}}).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fd"),
+        "movie_name" : "Slave of Love, A (Raba lyubvi)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2005,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fe"),
+        "movie_name" : "Long John Silver",
+        "movie_genre" : "Action|Adventure",
+        "production_year" : 2019,
+        "budget" : 18210
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5400"),
+        "movie_name" : "Excision",
+        "movie_genre" : "Crime|Drama|Horror|Thriller",
+        "production_year" : 2000,
+        "budget" : 15782
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5401"),
+        "movie_name" : "Deadline",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5402"),
+        "movie_name" : "Walk to Remember, A",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2002,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5403"),
+        "movie_name" : "Alan Partridge: Alpha Papa",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 15000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5405"),
+        "movie_name" : "Sweet Hereafter, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "budget" : 15581
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5406"),
+        "movie_name" : "Turn It Up",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2005,
+        "budget" : 18500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5408"),
+        "movie_name" : "Staying Together",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2015,
+        "budget" : 18550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5409"),
+        "movie_name" : "Constant Nymph, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2007,
+        "budget" : 18000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540a"),
+        "movie_name" : "Conspirator, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2018,
+        "budget" : 19500
+}
+> db.movies.find({budget:{$lte:15000}}).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53ff"),
+        "movie_name" : "Désiré",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 14512
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5403"),
+        "movie_name" : "Alan Partridge: Alpha Papa",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 15000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5404"),
+        "movie_name" : "Red Chapel (Røde kapel)",
+        "movie_genre" : "Comedy|Documentary",
+        "production_year" : 1996,
+        "budget" : 11540
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5407"),
+        "movie_name" : "Razortooth",
+        "movie_genre" : "Action|Horror|Sci-Fi|Thriller",
+        "production_year" : 2008,
+        "budget" : 14550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540b"),
+        "movie_name" : "This Is England",
+        "movie_genre" : "Drama",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540c"),
+        "movie_name" : "This Land Is Mine",
+        "movie_genre" : "Drama|War",
+        "production_year" : 0,
+        "budget" : 0
+}
+> db.movies.find({budget:{$lte:15000},{production_year:{$gte:2000}}).pretty()
+... db.movies.find({$budget:{$gt:18000}},{production_year:{$gt:2000}}]}).pretty()
+uncaught exception: SyntaxError: expected property name, got '{' :
+@(shell):1:36
+> db.movies.find({$budget:{$gt:18000}},{production_year:{$gt:2000}}]}).pretty()
+uncaught exception: SyntaxError: missing ) after argument list :
+@(shell):1:65
+> db.movies.find({{$budget:{$gt:18000}},{production_year:{$gt:2000}}]}).pretty()
+uncaught exception: SyntaxError: expected property name, got '{' :
+@(shell):1:16
+> db.movies.find({[{$budget:{$gt:18000}},{production_year:{$gt:2000}}]}).pretty()
+uncaught exception: SyntaxError: missing ] in computed property name :
+@(shell):1:38
+> db.movies.find([{$budget:{$gt:18000}},{production_year:{$gt:2000}}]).pretty()
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "Expected field filterto be of type object",
+        "code" : 14,
+        "codeName" : "TypeMismatch"
+}
+> db.movies.find({$budget:{$gt:18000}},{production_year:{$gt:2000}}]}).pretty()
+uncaught exception: SyntaxError: missing ) after argument list :
+@(shell):1:65
+> db.movies.find({$and:[{budget:{$gt:18000}},{production_year:{$gt:2000}}])
+...
+...
+> db.movies.find({$and:[{budget:{$gt18000}},{production_year:{$gt:2000}}]})
+uncaught exception: ReferenceError: $gt18000 is not defined :
+@(shell):1:32
+> db.movies.find({$and:[{budget:{$gt:18000}},{production_year:{$gt:2000}}]})
+{ "_id" : ObjectId("622dd96effb9e0ed30ec53fe"), "movie_name" : "Long John Silver", "movie_genre" : "Action|Adventure", "production_year" : 2019, "budget" : 18210 }
+{ "_id" : ObjectId("622dd96effb9e0ed30ec5406"), "movie_name" : "Turn It Up", "movie_genre" : "Crime|Drama", "production_year" : 2005, "budget" : 18500 }
+{ "_id" : ObjectId("622dd96effb9e0ed30ec5408"), "movie_name" : "Staying Together", "movie_genre" : "Comedy|Drama", "production_year" : 2015, "budget" : 18550 }
+{ "_id" : ObjectId("622dd96effb9e0ed30ec540a"), "movie_name" : "Conspirator, The", "movie_genre" : "Drama", "production_year" : 2018, "budget" : 19500 }
+> db.movies.find({$and:[{budget:{$lt:18000}},{production_year:{$lt:2000}}]}).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5403"),
+        "movie_name" : "Alan Partridge: Alpha Papa",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 15000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5404"),
+        "movie_name" : "Red Chapel (Røde kapel)",
+        "movie_genre" : "Comedy|Documentary",
+        "production_year" : 1996,
+        "budget" : 11540
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540b"),
+        "movie_name" : "This Is England",
+        "movie_genre" : "Drama",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540c"),
+        "movie_name" : "This Land Is Mine",
+        "movie_genre" : "Drama|War",
+        "production_year" : 0,
+        "budget" : 0
+}
+> db.movies.find({$and:[{budget:{$gt:18000}},{production_year:{$gt:2000}}]}).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fe"),
+        "movie_name" : "Long John Silver",
+        "movie_genre" : "Action|Adventure",
+        "production_year" : 2019,
+        "budget" : 18210
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5406"),
+        "movie_name" : "Turn It Up",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2005,
+        "budget" : 18500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5408"),
+        "movie_name" : "Staying Together",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2015,
+        "budget" : 18550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540a"),
+        "movie_name" : "Conspirator, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2018,
+        "budget" : 19500
+}
+> db.movies.find({$and:[{budget:{$lt:18000}},{production_year:{$lt:2000}}]}).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5403"),
+        "movie_name" : "Alan Partridge: Alpha Papa",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 15000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5404"),
+        "movie_name" : "Red Chapel (Røde kapel)",
+        "movie_genre" : "Comedy|Documentary",
+        "production_year" : 1996,
+        "budget" : 11540
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540b"),
+        "movie_name" : "This Is England",
+        "movie_genre" : "Drama",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540c"),
+        "movie_name" : "This Land Is Mine",
+        "movie_genre" : "Drama|War",
+        "production_year" : 0,
+        "budget" : 0
+}
+> db.movies.find({$nor:[{budget:{$lt:10000}},{production_year:{$lt:2000}}]}).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fd"),
+        "movie_name" : "Slave of Love, A (Raba lyubvi)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2005,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fe"),
+        "movie_name" : "Long John Silver",
+        "movie_genre" : "Action|Adventure",
+        "production_year" : 2019,
+        "budget" : 18210
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53ff"),
+        "movie_name" : "Désiré",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 14512
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5400"),
+        "movie_name" : "Excision",
+        "movie_genre" : "Crime|Drama|Horror|Thriller",
+        "production_year" : 2000,
+        "budget" : 15782
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5401"),
+        "movie_name" : "Deadline",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5402"),
+        "movie_name" : "Walk to Remember, A",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2002,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5405"),
+        "movie_name" : "Sweet Hereafter, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "budget" : 15581
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5406"),
+        "movie_name" : "Turn It Up",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2005,
+        "budget" : 18500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5407"),
+        "movie_name" : "Razortooth",
+        "movie_genre" : "Action|Horror|Sci-Fi|Thriller",
+        "production_year" : 2008,
+        "budget" : 14550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5408"),
+        "movie_name" : "Staying Together",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2015,
+        "budget" : 18550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5409"),
+        "movie_name" : "Constant Nymph, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2007,
+        "budget" : 18000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540a"),
+        "movie_name" : "Conspirator, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2018,
+        "budget" : 19500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540d"),
+        "movie_name" : "Marvel One-Shot: Item 47",
+        "movie_genre" : "Action|Fantasy|Sci-Fi",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540e"),
+        "movie_name" : "When a Man Loves a Woman",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540f"),
+        "movie_name" : "Hatchet II",
+        "movie_genre" : "Comedy|Horror|Thriller",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5410"),
+        "movie_name" : "Hide-Out",
+        "movie_genre" : "Comedy|Crime|Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5411"),
+        "movie_name" : "Quiz Show",
+        "movie_genre" : "Drama",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5412"),
+        "movie_name" : "Gray Matters",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5413"),
+        "movie_name" : "Dark Blue",
+        "movie_genre" : "Action|Crime|Drama|Thriller",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5414"),
+        "movie_name" : "Illustrated Man, The",
+        "movie_genre" : "Sci-Fi",
+        "production_year" : null,
+        "budget" : null
+}
+Type "it" for more
+> db.movies.find({$nor:[{budget:{$lt:10000}},{production_year:{$gt:2000}}]}).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53ff"),
+        "movie_name" : "Désiré",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 14512
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5400"),
+        "movie_name" : "Excision",
+        "movie_genre" : "Crime|Drama|Horror|Thriller",
+        "production_year" : 2000,
+        "budget" : 15782
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5403"),
+        "movie_name" : "Alan Partridge: Alpha Papa",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 15000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5404"),
+        "movie_name" : "Red Chapel (Røde kapel)",
+        "movie_genre" : "Comedy|Documentary",
+        "production_year" : 1996,
+        "budget" : 11540
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540d"),
+        "movie_name" : "Marvel One-Shot: Item 47",
+        "movie_genre" : "Action|Fantasy|Sci-Fi",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540e"),
+        "movie_name" : "When a Man Loves a Woman",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540f"),
+        "movie_name" : "Hatchet II",
+        "movie_genre" : "Comedy|Horror|Thriller",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5410"),
+        "movie_name" : "Hide-Out",
+        "movie_genre" : "Comedy|Crime|Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5411"),
+        "movie_name" : "Quiz Show",
+        "movie_genre" : "Drama",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5412"),
+        "movie_name" : "Gray Matters",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5413"),
+        "movie_name" : "Dark Blue",
+        "movie_genre" : "Action|Crime|Drama|Thriller",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5414"),
+        "movie_name" : "Illustrated Man, The",
+        "movie_genre" : "Sci-Fi",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5415"),
+        "movie_name" : "Knight of Cups",
+        "movie_genre" : "Drama",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5416"),
+        "movie_name" : "American Outlaws",
+        "movie_genre" : "Action|Comedy|Western",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5417"),
+        "movie_name" : "Cairo Station (a.k.a. Iron Gate, The) (Bab el hadid)",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5418"),
+        "movie_name" : "Scream 3",
+        "movie_genre" : "Comedy|Horror|Mystery|Thriller",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5419"),
+        "movie_name" : "Shawshank Redemption, The",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec541a"),
+        "movie_name" : "Eu Não Quero Voltar Sozinho (I Don't Want to Go Back Alone)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec541b"),
+        "movie_name" : "American Me",
+        "movie_genre" : "Drama",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec541c"),
+        "movie_name" : "About Time",
+        "movie_genre" : "Drama|Fantasy|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+Type "it" for more
+> db.movies.find({$nor:[{budget:{$gt:10000}},{production_year:{$gt:2000}}]}).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540b"),
+        "movie_name" : "This Is England",
+        "movie_genre" : "Drama",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540c"),
+        "movie_name" : "This Land Is Mine",
+        "movie_genre" : "Drama|War",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540d"),
+        "movie_name" : "Marvel One-Shot: Item 47",
+        "movie_genre" : "Action|Fantasy|Sci-Fi",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540e"),
+        "movie_name" : "When a Man Loves a Woman",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540f"),
+        "movie_name" : "Hatchet II",
+        "movie_genre" : "Comedy|Horror|Thriller",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5410"),
+        "movie_name" : "Hide-Out",
+        "movie_genre" : "Comedy|Crime|Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5411"),
+        "movie_name" : "Quiz Show",
+        "movie_genre" : "Drama",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5412"),
+        "movie_name" : "Gray Matters",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5413"),
+        "movie_name" : "Dark Blue",
+        "movie_genre" : "Action|Crime|Drama|Thriller",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5414"),
+        "movie_name" : "Illustrated Man, The",
+        "movie_genre" : "Sci-Fi",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5415"),
+        "movie_name" : "Knight of Cups",
+        "movie_genre" : "Drama",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5416"),
+        "movie_name" : "American Outlaws",
+        "movie_genre" : "Action|Comedy|Western",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5417"),
+        "movie_name" : "Cairo Station (a.k.a. Iron Gate, The) (Bab el hadid)",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5418"),
+        "movie_name" : "Scream 3",
+        "movie_genre" : "Comedy|Horror|Mystery|Thriller",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5419"),
+        "movie_name" : "Shawshank Redemption, The",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec541a"),
+        "movie_name" : "Eu Não Quero Voltar Sozinho (I Don't Want to Go Back Alone)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec541b"),
+        "movie_name" : "American Me",
+        "movie_genre" : "Drama",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec541c"),
+        "movie_name" : "About Time",
+        "movie_genre" : "Drama|Fantasy|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec541d"),
+        "movie_name" : "Happy Campers",
+        "movie_genre" : "Comedy",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec541e"),
+        "movie_name" : "Eagle Eye",
+        "movie_genre" : "Action|Crime|Thriller|IMAX",
+        "production_year" : null,
+        "budget" : null
+}
+Type "it" for more
+> db.movies.find({$nor:[{budget:{$gt:10000}},{production_year:{$gt:2000}}]}).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540b"),
+        "movie_name" : "This Is England",
+        "movie_genre" : "Drama",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540c"),
+        "movie_name" : "This Land Is Mine",
+        "movie_genre" : "Drama|War",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540d"),
+        "movie_name" : "Marvel One-Shot: Item 47",
+        "movie_genre" : "Action|Fantasy|Sci-Fi",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540e"),
+        "movie_name" : "When a Man Loves a Woman",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540f"),
+        "movie_name" : "Hatchet II",
+        "movie_genre" : "Comedy|Horror|Thriller",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5410"),
+        "movie_name" : "Hide-Out",
+        "movie_genre" : "Comedy|Crime|Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5411"),
+        "movie_name" : "Quiz Show",
+        "movie_genre" : "Drama",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5412"),
+        "movie_name" : "Gray Matters",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5413"),
+        "movie_name" : "Dark Blue",
+        "movie_genre" : "Action|Crime|Drama|Thriller",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5414"),
+        "movie_name" : "Illustrated Man, The",
+        "movie_genre" : "Sci-Fi",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5415"),
+        "movie_name" : "Knight of Cups",
+        "movie_genre" : "Drama",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5416"),
+        "movie_name" : "American Outlaws",
+        "movie_genre" : "Action|Comedy|Western",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5417"),
+        "movie_name" : "Cairo Station (a.k.a. Iron Gate, The) (Bab el hadid)",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5418"),
+        "movie_name" : "Scream 3",
+        "movie_genre" : "Comedy|Horror|Mystery|Thriller",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5419"),
+        "movie_name" : "Shawshank Redemption, The",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec541a"),
+        "movie_name" : "Eu Não Quero Voltar Sozinho (I Don't Want to Go Back Alone)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec541b"),
+        "movie_name" : "American Me",
+        "movie_genre" : "Drama",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec541c"),
+        "movie_name" : "About Time",
+        "movie_genre" : "Drama|Fantasy|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec541d"),
+        "movie_name" : "Happy Campers",
+        "movie_genre" : "Comedy",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec541e"),
+        "movie_name" : "Eagle Eye",
+        "movie_genre" : "Action|Crime|Thriller|IMAX",
+        "production_year" : null,
+        "budget" : null
+}
+Type "it" for more
+> db.movies.find().pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fd"),
+        "movie_name" : "Slave of Love, A (Raba lyubvi)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2005,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fe"),
+        "movie_name" : "Long John Silver",
+        "movie_genre" : "Action|Adventure",
+        "production_year" : 2019,
+        "budget" : 18210
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53ff"),
+        "movie_name" : "Désiré",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 14512
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5400"),
+        "movie_name" : "Excision",
+        "movie_genre" : "Crime|Drama|Horror|Thriller",
+        "production_year" : 2000,
+        "budget" : 15782
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5401"),
+        "movie_name" : "Deadline",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5402"),
+        "movie_name" : "Walk to Remember, A",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2002,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5403"),
+        "movie_name" : "Alan Partridge: Alpha Papa",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 15000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5404"),
+        "movie_name" : "Red Chapel (Røde kapel)",
+        "movie_genre" : "Comedy|Documentary",
+        "production_year" : 1996,
+        "budget" : 11540
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5405"),
+        "movie_name" : "Sweet Hereafter, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "budget" : 15581
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5406"),
+        "movie_name" : "Turn It Up",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2005,
+        "budget" : 18500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5407"),
+        "movie_name" : "Razortooth",
+        "movie_genre" : "Action|Horror|Sci-Fi|Thriller",
+        "production_year" : 2008,
+        "budget" : 14550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5408"),
+        "movie_name" : "Staying Together",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2015,
+        "budget" : 18550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5409"),
+        "movie_name" : "Constant Nymph, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2007,
+        "budget" : 18000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540a"),
+        "movie_name" : "Conspirator, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2018,
+        "budget" : 19500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540b"),
+        "movie_name" : "This Is England",
+        "movie_genre" : "Drama",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540c"),
+        "movie_name" : "This Land Is Mine",
+        "movie_genre" : "Drama|War",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540d"),
+        "movie_name" : "Marvel One-Shot: Item 47",
+        "movie_genre" : "Action|Fantasy|Sci-Fi",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540e"),
+        "movie_name" : "When a Man Loves a Woman",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540f"),
+        "movie_name" : "Hatchet II",
+        "movie_genre" : "Comedy|Horror|Thriller",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5410"),
+        "movie_name" : "Hide-Out",
+        "movie_genre" : "Comedy|Crime|Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+Type "it" for more
+> db.movies.find({$and:[{budget:{$ne:10000}},{production_year:{$ne:2000}}]}).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fd"),
+        "movie_name" : "Slave of Love, A (Raba lyubvi)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2005,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fe"),
+        "movie_name" : "Long John Silver",
+        "movie_genre" : "Action|Adventure",
+        "production_year" : 2019,
+        "budget" : 18210
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5401"),
+        "movie_name" : "Deadline",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5402"),
+        "movie_name" : "Walk to Remember, A",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2002,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5403"),
+        "movie_name" : "Alan Partridge: Alpha Papa",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 15000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5404"),
+        "movie_name" : "Red Chapel (Røde kapel)",
+        "movie_genre" : "Comedy|Documentary",
+        "production_year" : 1996,
+        "budget" : 11540
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5405"),
+        "movie_name" : "Sweet Hereafter, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "budget" : 15581
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5406"),
+        "movie_name" : "Turn It Up",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2005,
+        "budget" : 18500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5407"),
+        "movie_name" : "Razortooth",
+        "movie_genre" : "Action|Horror|Sci-Fi|Thriller",
+        "production_year" : 2008,
+        "budget" : 14550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5408"),
+        "movie_name" : "Staying Together",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2015,
+        "budget" : 18550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5409"),
+        "movie_name" : "Constant Nymph, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2007,
+        "budget" : 18000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540a"),
+        "movie_name" : "Conspirator, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2018,
+        "budget" : 19500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540b"),
+        "movie_name" : "This Is England",
+        "movie_genre" : "Drama",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540c"),
+        "movie_name" : "This Land Is Mine",
+        "movie_genre" : "Drama|War",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540d"),
+        "movie_name" : "Marvel One-Shot: Item 47",
+        "movie_genre" : "Action|Fantasy|Sci-Fi",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540e"),
+        "movie_name" : "When a Man Loves a Woman",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540f"),
+        "movie_name" : "Hatchet II",
+        "movie_genre" : "Comedy|Horror|Thriller",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5410"),
+        "movie_name" : "Hide-Out",
+        "movie_genre" : "Comedy|Crime|Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5411"),
+        "movie_name" : "Quiz Show",
+        "movie_genre" : "Drama",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5412"),
+        "movie_name" : "Gray Matters",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+Type "it" for more
+> db.movies.find({$and:[{production_year:{$gte:2000}},{production_year:{$lte:2000}}]}).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53ff"),
+        "movie_name" : "Désiré",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 14512
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5400"),
+        "movie_name" : "Excision",
+        "movie_genre" : "Crime|Drama|Horror|Thriller",
+        "production_year" : 2000,
+        "budget" : 15782
+}
+> db.movies.find({$and:[{production_year:{$gt:2000}},{production_year:{$lt:2000}}]}).pretty()
+> db.movies.find({$or:[{production_year:{$gt:2000}},{production_year:{$lt:2000}}]}).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fd"),
+        "movie_name" : "Slave of Love, A (Raba lyubvi)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2005,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fe"),
+        "movie_name" : "Long John Silver",
+        "movie_genre" : "Action|Adventure",
+        "production_year" : 2019,
+        "budget" : 18210
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5401"),
+        "movie_name" : "Deadline",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5402"),
+        "movie_name" : "Walk to Remember, A",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2002,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5403"),
+        "movie_name" : "Alan Partridge: Alpha Papa",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 15000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5404"),
+        "movie_name" : "Red Chapel (Røde kapel)",
+        "movie_genre" : "Comedy|Documentary",
+        "production_year" : 1996,
+        "budget" : 11540
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5405"),
+        "movie_name" : "Sweet Hereafter, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "budget" : 15581
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5406"),
+        "movie_name" : "Turn It Up",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2005,
+        "budget" : 18500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5407"),
+        "movie_name" : "Razortooth",
+        "movie_genre" : "Action|Horror|Sci-Fi|Thriller",
+        "production_year" : 2008,
+        "budget" : 14550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5408"),
+        "movie_name" : "Staying Together",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2015,
+        "budget" : 18550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5409"),
+        "movie_name" : "Constant Nymph, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2007,
+        "budget" : 18000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540a"),
+        "movie_name" : "Conspirator, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2018,
+        "budget" : 19500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540b"),
+        "movie_name" : "This Is England",
+        "movie_genre" : "Drama",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540c"),
+        "movie_name" : "This Land Is Mine",
+        "movie_genre" : "Drama|War",
+        "production_year" : 0,
+        "budget" : 0
+}
+> db.movies.find({$or:[{production_year:{$gt:2000}},{production_year:{$lt:2010}}]}).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fd"),
+        "movie_name" : "Slave of Love, A (Raba lyubvi)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2005,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fe"),
+        "movie_name" : "Long John Silver",
+        "movie_genre" : "Action|Adventure",
+        "production_year" : 2019,
+        "budget" : 18210
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53ff"),
+        "movie_name" : "Désiré",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 14512
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5400"),
+        "movie_name" : "Excision",
+        "movie_genre" : "Crime|Drama|Horror|Thriller",
+        "production_year" : 2000,
+        "budget" : 15782
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5401"),
+        "movie_name" : "Deadline",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5402"),
+        "movie_name" : "Walk to Remember, A",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2002,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5403"),
+        "movie_name" : "Alan Partridge: Alpha Papa",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 15000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5404"),
+        "movie_name" : "Red Chapel (Røde kapel)",
+        "movie_genre" : "Comedy|Documentary",
+        "production_year" : 1996,
+        "budget" : 11540
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5405"),
+        "movie_name" : "Sweet Hereafter, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "budget" : 15581
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5406"),
+        "movie_name" : "Turn It Up",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2005,
+        "budget" : 18500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5407"),
+        "movie_name" : "Razortooth",
+        "movie_genre" : "Action|Horror|Sci-Fi|Thriller",
+        "production_year" : 2008,
+        "budget" : 14550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5408"),
+        "movie_name" : "Staying Together",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2015,
+        "budget" : 18550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5409"),
+        "movie_name" : "Constant Nymph, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2007,
+        "budget" : 18000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540a"),
+        "movie_name" : "Conspirator, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2018,
+        "budget" : 19500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540b"),
+        "movie_name" : "This Is England",
+        "movie_genre" : "Drama",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540c"),
+        "movie_name" : "This Land Is Mine",
+        "movie_genre" : "Drama|War",
+        "production_year" : 0,
+        "budget" : 0
+}
+> db.movies.find({$and:[{production_year:{$gt:2000}},{production_year:{$lt:2010}}]}).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fd"),
+        "movie_name" : "Slave of Love, A (Raba lyubvi)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2005,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5401"),
+        "movie_name" : "Deadline",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5402"),
+        "movie_name" : "Walk to Remember, A",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2002,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5405"),
+        "movie_name" : "Sweet Hereafter, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "budget" : 15581
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5406"),
+        "movie_name" : "Turn It Up",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2005,
+        "budget" : 18500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5407"),
+        "movie_name" : "Razortooth",
+        "movie_genre" : "Action|Horror|Sci-Fi|Thriller",
+        "production_year" : 2008,
+        "budget" : 14550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5409"),
+        "movie_name" : "Constant Nymph, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2007,
+        "budget" : 18000
+}
+> db.movies.find({$or:[{production_year:{$gt:2000}},{production_year:{$lt:2010}}]}).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fd"),
+        "movie_name" : "Slave of Love, A (Raba lyubvi)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2005,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fe"),
+        "movie_name" : "Long John Silver",
+        "movie_genre" : "Action|Adventure",
+        "production_year" : 2019,
+        "budget" : 18210
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53ff"),
+        "movie_name" : "Désiré",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 14512
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5400"),
+        "movie_name" : "Excision",
+        "movie_genre" : "Crime|Drama|Horror|Thriller",
+        "production_year" : 2000,
+        "budget" : 15782
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5401"),
+        "movie_name" : "Deadline",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5402"),
+        "movie_name" : "Walk to Remember, A",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2002,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5403"),
+        "movie_name" : "Alan Partridge: Alpha Papa",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 15000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5404"),
+        "movie_name" : "Red Chapel (Røde kapel)",
+        "movie_genre" : "Comedy|Documentary",
+        "production_year" : 1996,
+        "budget" : 11540
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5405"),
+        "movie_name" : "Sweet Hereafter, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "budget" : 15581
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5406"),
+        "movie_name" : "Turn It Up",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2005,
+        "budget" : 18500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5407"),
+        "movie_name" : "Razortooth",
+        "movie_genre" : "Action|Horror|Sci-Fi|Thriller",
+        "production_year" : 2008,
+        "budget" : 14550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5408"),
+        "movie_name" : "Staying Together",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2015,
+        "budget" : 18550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5409"),
+        "movie_name" : "Constant Nymph, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2007,
+        "budget" : 18000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540a"),
+        "movie_name" : "Conspirator, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2018,
+        "budget" : 19500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540b"),
+        "movie_name" : "This Is England",
+        "movie_genre" : "Drama",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540c"),
+        "movie_name" : "This Land Is Mine",
+        "movie_genre" : "Drama|War",
+        "production_year" : 0,
+        "budget" : 0
+}
+> db.movies.find({$and:[{production_year:{$gt:2000}},{production_year:{$lt:2010}}]}).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fd"),
+        "movie_name" : "Slave of Love, A (Raba lyubvi)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2005,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5401"),
+        "movie_name" : "Deadline",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5402"),
+        "movie_name" : "Walk to Remember, A",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2002,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5405"),
+        "movie_name" : "Sweet Hereafter, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "budget" : 15581
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5406"),
+        "movie_name" : "Turn It Up",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2005,
+        "budget" : 18500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5407"),
+        "movie_name" : "Razortooth",
+        "movie_genre" : "Action|Horror|Sci-Fi|Thriller",
+        "production_year" : 2008,
+        "budget" : 14550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5409"),
+        "movie_name" : "Constant Nymph, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2007,
+        "budget" : 18000
+}
+> db.movies.find({$and:[{production_year:{$gt:2000}},{production_year:{$lt:2010}}]}).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fd"),
+        "movie_name" : "Slave of Love, A (Raba lyubvi)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2005,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5401"),
+        "movie_name" : "Deadline",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5402"),
+        "movie_name" : "Walk to Remember, A",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2002,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5405"),
+        "movie_name" : "Sweet Hereafter, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "budget" : 15581
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5406"),
+        "movie_name" : "Turn It Up",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2005,
+        "budget" : 18500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5407"),
+        "movie_name" : "Razortooth",
+        "movie_genre" : "Action|Horror|Sci-Fi|Thriller",
+        "production_year" : 2008,
+        "budget" : 14550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5409"),
+        "movie_name" : "Constant Nymph, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2007,
+        "budget" : 18000
+}
+> db.movies.find({movies}).sort().pretty()
+uncaught exception: ReferenceError: movies is not defined :
+@(shell):1:17
+> db.movies.find({}).sort(producion_year:-1).pretty()
+uncaught exception: SyntaxError: missing ) after argument list :
+@(shell):1:38
+> db.movies.find({}).sort({producion_year:-1}).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fd"),
+        "movie_name" : "Slave of Love, A (Raba lyubvi)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2005,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fe"),
+        "movie_name" : "Long John Silver",
+        "movie_genre" : "Action|Adventure",
+        "production_year" : 2019,
+        "budget" : 18210
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53ff"),
+        "movie_name" : "Désiré",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 14512
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5400"),
+        "movie_name" : "Excision",
+        "movie_genre" : "Crime|Drama|Horror|Thriller",
+        "production_year" : 2000,
+        "budget" : 15782
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5401"),
+        "movie_name" : "Deadline",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5402"),
+        "movie_name" : "Walk to Remember, A",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2002,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5403"),
+        "movie_name" : "Alan Partridge: Alpha Papa",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 15000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5404"),
+        "movie_name" : "Red Chapel (Røde kapel)",
+        "movie_genre" : "Comedy|Documentary",
+        "production_year" : 1996,
+        "budget" : 11540
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5405"),
+        "movie_name" : "Sweet Hereafter, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "budget" : 15581
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5406"),
+        "movie_name" : "Turn It Up",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2005,
+        "budget" : 18500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5407"),
+        "movie_name" : "Razortooth",
+        "movie_genre" : "Action|Horror|Sci-Fi|Thriller",
+        "production_year" : 2008,
+        "budget" : 14550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5408"),
+        "movie_name" : "Staying Together",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2015,
+        "budget" : 18550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5409"),
+        "movie_name" : "Constant Nymph, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2007,
+        "budget" : 18000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540a"),
+        "movie_name" : "Conspirator, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2018,
+        "budget" : 19500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540b"),
+        "movie_name" : "This Is England",
+        "movie_genre" : "Drama",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540c"),
+        "movie_name" : "This Land Is Mine",
+        "movie_genre" : "Drama|War",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540d"),
+        "movie_name" : "Marvel One-Shot: Item 47",
+        "movie_genre" : "Action|Fantasy|Sci-Fi",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540e"),
+        "movie_name" : "When a Man Loves a Woman",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540f"),
+        "movie_name" : "Hatchet II",
+        "movie_genre" : "Comedy|Horror|Thriller",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5410"),
+        "movie_name" : "Hide-Out",
+        "movie_genre" : "Comedy|Crime|Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+Type "it" for more
+> db.movies.find({}).sort({producion_year:-1},{movie}).pretty()
+uncaught exception: ReferenceError: movie is not defined :
+@(shell):1:46
+> db.movies.find({}).sort({producion_year:-1},{movie_name:-1}).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fd"),
+        "movie_name" : "Slave of Love, A (Raba lyubvi)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2005,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fe"),
+        "movie_name" : "Long John Silver",
+        "movie_genre" : "Action|Adventure",
+        "production_year" : 2019,
+        "budget" : 18210
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53ff"),
+        "movie_name" : "Désiré",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 14512
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5400"),
+        "movie_name" : "Excision",
+        "movie_genre" : "Crime|Drama|Horror|Thriller",
+        "production_year" : 2000,
+        "budget" : 15782
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5401"),
+        "movie_name" : "Deadline",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5402"),
+        "movie_name" : "Walk to Remember, A",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2002,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5403"),
+        "movie_name" : "Alan Partridge: Alpha Papa",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 15000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5404"),
+        "movie_name" : "Red Chapel (Røde kapel)",
+        "movie_genre" : "Comedy|Documentary",
+        "production_year" : 1996,
+        "budget" : 11540
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5405"),
+        "movie_name" : "Sweet Hereafter, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "budget" : 15581
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5406"),
+        "movie_name" : "Turn It Up",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2005,
+        "budget" : 18500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5407"),
+        "movie_name" : "Razortooth",
+        "movie_genre" : "Action|Horror|Sci-Fi|Thriller",
+        "production_year" : 2008,
+        "budget" : 14550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5408"),
+        "movie_name" : "Staying Together",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2015,
+        "budget" : 18550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5409"),
+        "movie_name" : "Constant Nymph, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2007,
+        "budget" : 18000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540a"),
+        "movie_name" : "Conspirator, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2018,
+        "budget" : 19500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540b"),
+        "movie_name" : "This Is England",
+        "movie_genre" : "Drama",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540c"),
+        "movie_name" : "This Land Is Mine",
+        "movie_genre" : "Drama|War",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540d"),
+        "movie_name" : "Marvel One-Shot: Item 47",
+        "movie_genre" : "Action|Fantasy|Sci-Fi",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540e"),
+        "movie_name" : "When a Man Loves a Woman",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540f"),
+        "movie_name" : "Hatchet II",
+        "movie_genre" : "Comedy|Horror|Thriller",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5410"),
+        "movie_name" : "Hide-Out",
+        "movie_genre" : "Comedy|Crime|Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+Type "it" for more
+> db.movies.find({}).skip(10).limit(5).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5407"),
+        "movie_name" : "Razortooth",
+        "movie_genre" : "Action|Horror|Sci-Fi|Thriller",
+        "production_year" : 2008,
+        "budget" : 14550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5408"),
+        "movie_name" : "Staying Together",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2015,
+        "budget" : 18550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5409"),
+        "movie_name" : "Constant Nymph, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2007,
+        "budget" : 18000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540a"),
+        "movie_name" : "Conspirator, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2018,
+        "budget" : 19500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540b"),
+        "movie_name" : "This Is England",
+        "movie_genre" : "Drama",
+        "production_year" : 0,
+        "budget" : 0
+}
+> db.movies.find({}).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fd"),
+        "movie_name" : "Slave of Love, A (Raba lyubvi)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2005,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53fe"),
+        "movie_name" : "Long John Silver",
+        "movie_genre" : "Action|Adventure",
+        "production_year" : 2019,
+        "budget" : 18210
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec53ff"),
+        "movie_name" : "Désiré",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 14512
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5400"),
+        "movie_name" : "Excision",
+        "movie_genre" : "Crime|Drama|Horror|Thriller",
+        "production_year" : 2000,
+        "budget" : 15782
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5401"),
+        "movie_name" : "Deadline",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5402"),
+        "movie_name" : "Walk to Remember, A",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2002,
+        "budget" : 17114
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5403"),
+        "movie_name" : "Alan Partridge: Alpha Papa",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 15000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5404"),
+        "movie_name" : "Red Chapel (Røde kapel)",
+        "movie_genre" : "Comedy|Documentary",
+        "production_year" : 1996,
+        "budget" : 11540
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5405"),
+        "movie_name" : "Sweet Hereafter, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "budget" : 15581
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5406"),
+        "movie_name" : "Turn It Up",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2005,
+        "budget" : 18500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5407"),
+        "movie_name" : "Razortooth",
+        "movie_genre" : "Action|Horror|Sci-Fi|Thriller",
+        "production_year" : 2008,
+        "budget" : 14550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5408"),
+        "movie_name" : "Staying Together",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2015,
+        "budget" : 18550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5409"),
+        "movie_name" : "Constant Nymph, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2007,
+        "budget" : 18000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540a"),
+        "movie_name" : "Conspirator, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2018,
+        "budget" : 19500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540b"),
+        "movie_name" : "This Is England",
+        "movie_genre" : "Drama",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540c"),
+        "movie_name" : "This Land Is Mine",
+        "movie_genre" : "Drama|War",
+        "production_year" : 0,
+        "budget" : 0
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540d"),
+        "movie_name" : "Marvel One-Shot: Item 47",
+        "movie_genre" : "Action|Fantasy|Sci-Fi",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540e"),
+        "movie_name" : "When a Man Loves a Woman",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540f"),
+        "movie_name" : "Hatchet II",
+        "movie_genre" : "Comedy|Horror|Thriller",
+        "production_year" : null,
+        "budget" : null
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5410"),
+        "movie_name" : "Hide-Out",
+        "movie_genre" : "Comedy|Crime|Drama|Romance",
+        "production_year" : null,
+        "budget" : null
+}
+Type "it" for more
+> db.movies.find({}).skip(10).limit(5).pretty()
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5407"),
+        "movie_name" : "Razortooth",
+        "movie_genre" : "Action|Horror|Sci-Fi|Thriller",
+        "production_year" : 2008,
+        "budget" : 14550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5408"),
+        "movie_name" : "Staying Together",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2015,
+        "budget" : 18550
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec5409"),
+        "movie_name" : "Constant Nymph, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2007,
+        "budget" : 18000
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540a"),
+        "movie_name" : "Conspirator, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2018,
+        "budget" : 19500
+}
+{
+        "_id" : ObjectId("622dd96effb9e0ed30ec540b"),
+        "movie_name" : "This Is England",
+        "movie_genre" : "Drama",
+        "production_year" : 0,
+        "budget" : 0
+}
