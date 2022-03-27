@@ -12,7 +12,7 @@ router.get("", async (req, res) => {
 
     try {
 
-        const gallery = await Gallery.findd()
+        const gallery = await Gallery.find()
             .populate({ path: "user_id" })
             .lean()
             .exec()
@@ -20,7 +20,7 @@ router.get("", async (req, res) => {
         return res.status(200).send(gallery)
 
     } catch (error) {
-        return res.status(500).send({ message: err.message })
+        return res.status(500).send({ message: error.message })
     }
 })
 
