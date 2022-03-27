@@ -8,48 +8,45 @@ const fs = require("fs")
 
 const upload = require("../middlewares/upload")
 
-router.get("", async (req, res) =>{
+router.get("", async (req, res) => {
 
     try {
-        
+
         const users = await User.find().lean().exec()
 
         return res.status(200).send(users)
 
     } catch (error) {
-        return res.status(500).send({message:err.message})
+        return res.status(500).send({ message: err.message })
     }
 })
 
-router.post("", upload.single("pofilePic"), async (req, res) =>{
+router.post("", upload.single("profilePic"), async (req, res) => {
 
     try {
-        
-        console.log(`req.file.path:`, req.file.path)
+        // console.log(`req.file.path:`, req.file.path)
 
         const user = await User.create({
-
             first_name: req.body.first_name,
             last_name: req.body.last_name,
-            profilePic : req.file.path
+            profilePic: req.file.path
         })
 
         console.log("user:", user)
 
         return res.status(201).send(user)
     } catch (error) {
-        
-        return res.send(500).send({message: error.message})
+
+        return res.status(500).send({ message: error.message })
     }
 })
 
-router.patch("/userId", upload.single("prifilePic"), async (req, res) =>{
+router.patch("/userId", upload.single("profilePic"), async (req, res) => {
 
     try {
-        
         const data = {
 
-            first_name : req.body.first_name,
+            first_name: req.body.first_name,
             last_name: req.body.last_name,
             profilePic: req.file.path
         }
@@ -60,20 +57,20 @@ router.patch("/userId", upload.single("prifilePic"), async (req, res) =>{
         //deleting previous user profile pic
         fs.unlinkSync(path.toString())
 
-        user = await User.findByIdAndUpdate(req.params.userId, data, {new: true})
+        user = await User.findByIdAndUpdate(req.params.userId, data, { new: true })
 
-        return res.status(200).send({user})
+        return res.status(200).send({ user })
 
     } catch (error) {
-        return res.status(500).send(error.message)   
+        return res.status(500).send(error.message)
     }
 
 })
 
-router.delete("/userId", async (req, res) =>{
+router.delete("/userId", async (req, res) => {
 
     try {
-        
+
         let user = await User.findById(req.params.userId)
 
         let path = user.profilePic
