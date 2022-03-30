@@ -1,6 +1,6 @@
 const express = require("express")
 const connect = require("./configs/db")
-const passport = require("./configs/google-oauth233")
+const passport = require("./configs/google-oauth")
 const userController = require("./controller/user.controller")
 const productController = require("./controller/product.controller")
 const {register, login, generateToken} =require("./controller/auth.controller")
