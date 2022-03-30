@@ -30,7 +30,7 @@ const login = async (req, res) => {
         const user = await User.findOne({email : req.body.email})
         //checked if mail exists
         if(!user){
-            return res.status(400).send("Wrong Email or Password")
+            return res.status(400).send({message : "Wrong Email or Password"})
         }
 
         //if email exists, check password;
