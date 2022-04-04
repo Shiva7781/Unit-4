@@ -1,7 +1,6 @@
 {
   "name": "a12_authorisation_oauth",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,5 +19,6 @@
     "passport-google-oauth20": "^2.0.0",
     "passport-oauth2": "^1.6.1",
     "uuid": "^8.3.2"
-  }
+  },
+  "description": ""
 }

@@ -1,12 +1,12 @@
 require("dotenv").config()
 
-const jwt = require("jsonwentoken")
+const jwt = require("jsonwebtoken")
 
 const verifyToken = (token) =>{
 
     return new Promise ((resolve, reject) =>{
 
-        jwt.verify(token, process.env.SECRET_KEY, (error, decoded) =>{
+        jwt.verify(token, `${process.env.SECRET_KEY}`, (error, decoded) =>{
 
             if(error) {
                 return reject(error)
