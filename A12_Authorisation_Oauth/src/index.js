@@ -34,7 +34,7 @@ app.listen(7000, async (req, res) => {
 
         await connect()
 
-        console.log("listening")
+        console.log("listening 7000")
 
     } catch (error) {
 
